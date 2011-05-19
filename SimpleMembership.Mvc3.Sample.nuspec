@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+		<id>SimpleMembership.Mvc3.Sample</id>
+		<version>1.0</version>
+		<authors>Adam Anderly</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+			This sample AccountController demonstrates the use of SimpleMembership.Mvc3 with Mvc3 for Authentication and Membership. The included SimpleMembershipAccountController can be used as a drop-in replacement for the default AccountController in the Mvc3 Visual Studio project template. This package assumes you have the default Models already present (LogOnModel, RegisterModel, ChangePasswordModel)
+		</description>
+		<projectUrl>https://github.com/anderly/SimpleMembership.Mvc3</projectUrl>
+		<summary>This sample AccountController demonstrates the use of SimpleMembership.Mvc3.</summary>
+		<language>en-US</language>
+		<tags>SimpleMembership mvc Mvc3 Membership ASP.NET</tags>
+		<dependencies>
+			<dependency id="SimpleMembership.Mvc3" version="1.2" />
+		</dependencies>
+	</metadata>
+</package>
