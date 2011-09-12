@@ -13,7 +13,7 @@ using System.Net.Mail;
 
 namespace $rootnamespace$.Controllers
 {
-	public class AccountController : Controller
+	public class SimpleMembershipAccountController : Controller
 	{
 		public IWebSecurityService WebSecurityService { get; set; }
 
