@@ -1,19 +1,33 @@
 <?xml version="1.0"?>
-<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-		<id>SimpleMembership.Mvc3.Sample</id>
-		<version>1.0</version>
-		<authors>Adam Anderly</authors>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>
-			This sample AccountController demonstrates the use of SimpleMembership.Mvc3 with Mvc3 for Authentication and Membership. The included SimpleMembershipAccountController can be used as a drop-in replacement for the default AccountController in the Mvc3 Visual Studio project template. This package assumes you have the default Models already present (LogOnModel, RegisterModel, ChangePasswordModel)
-		</description>
-		<projectUrl>https://github.com/anderly/SimpleMembership.Mvc3</projectUrl>
-		<summary>This sample AccountController demonstrates the use of SimpleMembership.Mvc3.</summary>
-		<language>en-US</language>
-		<tags>SimpleMembership mvc Mvc3 Membership ASP.NET</tags>
-		<dependencies>
-			<dependency id="SimpleMembership.Mvc3" version="1.2" />
-		</dependencies>
-	</metadata>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SimpleMembership.Mvc3.Sample</id>
+    <version>1.1</version>
+    <authors>Adam Anderly</authors>
+    <owners>Adam Anderly</owners>
+    <projectUrl>https://github.com/anderly/SimpleMembership.Mvc3</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This sample AccountController demonstrates the use of SimpleMembership.Mvc3 with Mvc3 for Authentication and Membership. The included SimpleMembershipAccountController can be used as a drop-in replacement for the default AccountController in the Mvc3 Visual Studio project template. This package assumes you have the default Models already present (LogOnModel, RegisterModel, ChangePasswordModel)</description>
+    <summary>This sample AccountController demonstrates the use of SimpleMembership.Mvc3.</summary>
+    <releaseNotes>Small fix to AccountController to use requireEmailConfirmation named parameter on call to WebSecurityService.CreateUserAndAccount()</releaseNotes>
+    <language>en-US</language>
+    <tags>SimpleMembership mvc Mvc3 Membership ASP.NET</tags>
+    <dependencies>
+      <dependency id="SimpleMembership.Mvc3" version="1.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".git\hooks\applypatch-msg.sample" target=".git\hooks\applypatch-msg.sample" />
+    <file src=".git\hooks\commit-msg.sample" target=".git\hooks\commit-msg.sample" />
+    <file src=".git\hooks\post-commit.sample" target=".git\hooks\post-commit.sample" />
+    <file src=".git\hooks\post-receive.sample" target=".git\hooks\post-receive.sample" />
+    <file src=".git\hooks\post-update.sample" target=".git\hooks\post-update.sample" />
+    <file src=".git\hooks\pre-applypatch.sample" target=".git\hooks\pre-applypatch.sample" />
+    <file src=".git\hooks\pre-commit.sample" target=".git\hooks\pre-commit.sample" />
+    <file src=".git\hooks\pre-rebase.sample" target=".git\hooks\pre-rebase.sample" />
+    <file src=".git\hooks\prepare-commit-msg.sample" target=".git\hooks\prepare-commit-msg.sample" />
+    <file src=".git\hooks\update.sample" target=".git\hooks\update.sample" />
+    <file src="content\Controllers\SimpleMembershipAccountController.cs.pp" target="content\Controllers\SimpleMembershipAccountController.cs.pp" />
+    <file src="content\Views\Account\Thanks.cshtml" target="content\Views\Account\Thanks.cshtml" />
+  </files>
 </package>
