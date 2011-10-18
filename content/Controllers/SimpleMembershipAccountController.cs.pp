@@ -86,7 +86,7 @@ namespace $rootnamespace$.Controllers
 			{
 				// Attempt to register the user
 				var requireEmailConfirmation = false;
-				var token = WebSecurityService.CreateUserAndAccount(model.UserName, model.Password, requireEmailConfirmation);
+				var token = WebSecurityService.CreateUserAndAccount(model.UserName, model.Password, requireEmailConfirmation: requireEmailConfirmation);
 
 				if (requireEmailConfirmation)
 				{
