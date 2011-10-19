@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>SimpleMembership.Mvc3.Sample</id>
-    <version>1.1</version>
+    <version>1.2</version>
     <authors>Adam Anderly</authors>
     <owners>Adam Anderly</owners>
     <projectUrl>https://github.com/anderly/SimpleMembership.Mvc3</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This sample AccountController demonstrates the use of SimpleMembership.Mvc3 with Mvc3 for Authentication and Membership. The included SimpleMembershipAccountController can be used as a drop-in replacement for the default AccountController in the Mvc3 Visual Studio project template. This package assumes you have the default Models already present (LogOnModel, RegisterModel, ChangePasswordModel)</description>
     <summary>This sample AccountController demonstrates the use of SimpleMembership.Mvc3.</summary>
-    <releaseNotes>Small fix to AccountController to use requireEmailConfirmation named parameter on call to WebSecurityService.CreateUserAndAccount()</releaseNotes>
+    <releaseNotes>Added account confirmation, forgot password, password reset and basic email messenger service.</releaseNotes>
     <language>en-US</language>
     <tags>SimpleMembership mvc Mvc3 Membership ASP.NET</tags>
     <dependencies>
@@ -28,6 +28,14 @@
     <file src=".git\hooks\prepare-commit-msg.sample" target=".git\hooks\prepare-commit-msg.sample" />
     <file src=".git\hooks\update.sample" target=".git\hooks\update.sample" />
     <file src="content\Controllers\SimpleMembershipAccountController.cs.pp" target="content\Controllers\SimpleMembershipAccountController.cs.pp" />
+    <file src="content\Models\SimpleMembershipAccountModels.cs.pp" target="content\Models\SimpleMembershipAccountModels.cs.pp" />
+    <file src="content\Services\IMessengerService.cs.pp" target="content\Services\IMessengerService.cs.pp" />
+    <file src="content\Services\MessengerService.cs.pp" target="content\Services\MessengerService.cs.pp" />
+    <file src="content\Views\Account\Confirm.cshtml" target="content\Views\Account\Confirm.cshtml" />
+    <file src="content\Views\Account\ForgotPassword.cshtml.pp" target="content\Views\Account\ForgotPassword.cshtml.pp" />
+    <file src="content\Views\Account\ForgotPasswordMessage.cshtml" target="content\Views\Account\ForgotPasswordMessage.cshtml" />
+    <file src="content\Views\Account\PasswordReset.cshtml.pp" target="content\Views\Account\PasswordReset.cshtml.pp" />
+    <file src="content\Views\Account\PasswordResetSuccess.cshtml" target="content\Views\Account\PasswordResetSuccess.cshtml" />
     <file src="content\Views\Account\Thanks.cshtml" target="content\Views\Account\Thanks.cshtml" />
   </files>
 </package>
